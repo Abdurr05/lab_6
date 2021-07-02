@@ -8,7 +8,6 @@ OledWingAdafruit display;
 void setup() {
   // Put initialization like pinMode and begin functions here.
   display.setup();
-
 	display.clearDisplay();
 	display.display();
 }
@@ -23,7 +22,6 @@ void loop() {
   // to display the temperature
   if (display.pressedA()) {
     display.clearDisplay();
-
 		display.setTextSize(1);
 		display.setTextColor(WHITE);
 		display.setCursor(0,0);
